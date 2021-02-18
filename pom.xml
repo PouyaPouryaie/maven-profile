@@ -20,18 +20,16 @@
 	<profiles>
 		<profile>
 			<id>product</id>
-			<properties>
-				<maven.test.skip>true</maven.test.skip>
-			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
+			<properties>
+				<activatedProperties>product</activatedProperties>
+				<maven.test.skip>true</maven.test.skip>
+			</properties>
 		</profile>
 		<profile>
 			<id>integration</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
 			<properties>
 				<activatedProperties>integration</activatedProperties>
 			</properties>
